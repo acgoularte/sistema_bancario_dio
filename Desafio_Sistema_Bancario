@@ -1,4 +1,5 @@
 menu = """
+========== MENU PRINCIPAL ==========
 
 [1] Depositar
 [2] Sacar
@@ -23,6 +24,7 @@ while True:
         if valor > 0:
             saldo += valor
             extrato += f"Depósito: R$ {valor:.2f}\n"
+            print(f"\nSeu deposito de R$ {valor} foi realizado com sucesso!")
 
         else:
             print("Operação falhou! O valor informado é inválido.")
